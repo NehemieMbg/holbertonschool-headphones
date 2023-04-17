@@ -1,0 +1,79 @@
+/////////////////////////////
+// Navar
+
+.nav {
+  display: flex;
+  align-items: center;
+  margin: 3rem 0;
+  //   justify-content: center;
+
+  width: 70%;
+
+  .logo {
+    margin-right: auto;
+  }
+
+  .navbar {
+    display: flex;
+    align-items: center;
+
+    &__list {
+      list-style: none;
+
+      &:not(:last-child) {
+        margin-right: 4rem;
+      }
+
+      &-link:link {
+        text-decoration: none;
+
+        &:hover {
+          color: var(--color-primary);
+          transition: all 0.2s;
+        }
+      }
+
+      &-link,
+      &-link:visited {
+        color: #fff;
+      }
+    }
+  }
+}
+
+.hero {
+  color: #fff;
+
+  &__heading {
+    font-size: 3.2rem;
+    letter-spacing: 0.29rem;
+    font-weight: 700;
+  }
+
+  &__sub-heading {
+    font-weight: 600;
+    margin-bottom: 6rem;
+  }
+
+  &__btn {
+    border: none;
+    border-radius: 100px;
+    padding: 1.5rem 3rem;
+    color: #fff;
+    background-color: var(--color-primary);
+    margin-bottom: 8rem;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    &:hover {
+      filter: brightness(85%);
+      transition: all 0.2s;
+    }
+  }
+
+  &__text {
+    line-height: 2.65rem;
+    max-width: 63rem;
+    text-align: center;
+  }
+}
