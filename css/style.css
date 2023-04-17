@@ -68,6 +68,67 @@ body {
     max-width: 63rem;
     text-align: center; }
 
+.about {
+  color: var(--color-text-dark);
+  padding: 8rem 0; }
+  .about__heading {
+    font-size: 3.2rem;
+    font-weight: 600;
+    margin-bottom: 4rem; }
+  .about__text {
+    max-width: 63.7rem;
+    line-height: 2.65rem;
+    text-align: center;
+    margin-bottom: 10rem; }
+  .about .icons {
+    display: flex;
+    max-width: 100rem;
+    text-align: center; }
+    .about .icons__part-icon {
+      margin-bottom: 4rem; }
+    .about .icons__part-heading {
+      margin-bottom: 2.5rem; }
+    .about .icons__part-text {
+      line-height: 2.65rem; }
+
+.results {
+  background-image: url("../img/bg-image-2.png");
+  background-size: cover;
+  color: #fff;
+  line-height: 2.65rem;
+  padding-top: 18rem;
+  padding-bottom: 10rem; }
+  .results__heading {
+    font-size: 3.2rem;
+    font-weight: 500;
+    margin-bottom: 6rem; }
+  .results__text {
+    max-width: 63.7rem;
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: 10rem; }
+  .results .results-container {
+    display: flex; }
+    .results .results-container__icon {
+      position: relative; }
+      .results .results-container__icon:not(:last-child) {
+        margin-right: 12rem; }
+    .results .results-container__heading {
+      font-size: 4.6rem;
+      font-weight: 600; }
+    .results .results-container__text {
+      line-height: 4rem;
+      position: absolute;
+      text-align: center;
+      font-size: 1.4rem;
+      top: 60%;
+      left: 50%;
+      width: 100%;
+      transform: translate(-50%, -50%); }
+    .results .results-container__polygon {
+      width: 19rem;
+      height: 19rem; }
+
 .header {
   display: flex;
   flex-direction: column;
@@ -75,7 +136,8 @@ body {
   justify-content: space-between;
   height: 95rem;
   background-image: url("../img/bg-image-1.png");
-  background-size: cover; }
+  background-size: cover;
+  background-position: center; }
 
 .hero {
   margin-bottom: 8%;
@@ -83,3 +145,13 @@ body {
   align-items: center;
   flex-direction: column;
   max-width: 75.7rem; }
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.results {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
