@@ -1,4 +1,23 @@
 /////////////////////////////
+// Btn-primary
+
+.btn-primary {
+  border: none;
+  border-radius: 100px;
+  padding: 1.5rem 3rem;
+  color: #fff;
+  background-color: var(--color-primary);
+  margin-bottom: 8rem;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &:hover {
+    filter: brightness(85%);
+    transition: all 0.2s;
+  }
+}
+
+/////////////////////////////
 // Navar
 
 .nav {
@@ -56,19 +75,6 @@
   }
 
   &__btn {
-    border: none;
-    border-radius: 100px;
-    padding: 1.5rem 3rem;
-    color: #fff;
-    background-color: var(--color-primary);
-    margin-bottom: 8rem;
-    text-transform: uppercase;
-    cursor: pointer;
-
-    &:hover {
-      filter: brightness(85%);
-      transition: all 0.2s;
-    }
   }
 
   &__text {
@@ -174,6 +180,102 @@
     &__polygon {
       width: 19rem;
       height: 19rem;
+    }
+  }
+}
+
+/////////////////////////////
+// Contact
+.contact__container {
+  padding: 15rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &-form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 33.5rem;
+  }
+
+  &-heading {
+    font-size: 3.2rem;
+    font-weight: 500;
+  }
+
+  &-name {
+    margin-bottom: 4rem;
+
+    &-input {
+      width: 100%;
+    }
+  }
+
+  &-email {
+    margin-bottom: 4rem;
+  }
+
+  &-message {
+    margin-bottom: 4rem;
+  }
+
+  &-btn {
+    margin-top: 4rem;
+    margin-bottom: 0;
+  }
+
+  &-input {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--color-text-dark);
+    width: 100%;
+    border: none;
+    border-bottom: 0.1rem solid #979797;
+    padding-bottom: 0.8rem;
+
+    &::placeholder {
+      color: var(--color-text-dark);
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+/////////////////////////////
+// Contact
+.footer {
+  padding: 4rem 0;
+  color: #fff;
+  font-weight: 100;
+
+  &__container {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+  }
+
+  .logo {
+  }
+
+  &__icons {
+    display: flex;
+  }
+
+  .icons__list {
+    list-style: none;
+
+    &:not(:last-child) {
+      margin-right: 4rem;
+    }
+
+    &-link:link,
+    &-link:visited {
+      text-decoration: none;
     }
   }
 }
